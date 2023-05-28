@@ -1,3 +1,5 @@
+import CustomerCreateUseCase from "./create.customer.usecase";
+
 const input = {
     name: "John",
     address: {
