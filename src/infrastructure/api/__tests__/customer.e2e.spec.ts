@@ -78,7 +78,7 @@ describe("E2E test for customer", () => {
         expect(customer.name).toBe("John");
         expect(customer.address.street).toBe("Street");
         const customer2 = listResponse.body.customers[1];
-        expect(customer.name).toBe("Jane");
-        expect(customer.address.street).toBe("Street2");
+        expect(customer2.name).toBe("Jane");
+        expect(customer2.address.street).toBe("Street2");
     });
 });
