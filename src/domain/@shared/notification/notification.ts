@@ -10,6 +10,10 @@ export default class Notification {
         this.errors.push(error);
     }
 
+    hasErrors(): boolean {
+        return this.errors.length > 0;
+    }
+
     messages(context?: string): string {
         let message = "";
 
@@ -20,5 +24,5 @@ export default class Notification {
         });
         
         return message;
-    }
+    }  
 }
